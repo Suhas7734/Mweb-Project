@@ -1,6 +1,6 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../Resources/TestBuilds/SonyLivTests.robot
+Resource    ../Resources/Scenario Mapping/SonyLivTests.robot
 
 *** Variables ***
 
