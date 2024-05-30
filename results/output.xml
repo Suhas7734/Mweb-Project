@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-05-30T22:07:22.876980" rpa="false" schemaversion="5">
+<suite id="s1" name="MWeb Project" source="C:\Users\SW\MWeb Project">
+<suite id="s1-s1" name="Tests" source="C:\Users\SW\MWeb Project\Tests">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\SW\MWeb Project\Tests\Tests">
+<suite id="s1-s1-s1-s1" name="SonyLiv" source="C:\Users\SW\MWeb Project\Tests\Tests\SonyLiv.robot">
+<test id="s1-s1-s1-s1-t1" name="Subscription Page for Guest user" line="11">
+<kw name="Plans and Subscription page validation" owner="SonyLivTests">
+<kw name="Open Browser" owner="PlansAndSubscriptions">
+<kw name="Open Browser Application" owner="Common">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>browserName=${BROWSER}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-05-30T22:07:23.360122" elapsed="13.800052"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:23.360122" elapsed="13.800052"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:23.360122" elapsed="13.800052"/>
+</kw>
+<kw name="Open SonyLiv Application" owner="PlansAndSubscriptions">
+<kw name="Navigate to SonyLiv Application" owner="Common">
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${SONY_LIV_URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2024-05-30T22:07:37.160174" elapsed="7.816765"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:45.274161" level="INFO">xpath criteria: //*[@title="close-icon"]</msg>
+<arg>//*[@title="close-icon"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-30T22:07:44.976939" elapsed="0.297222"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:45.280670" level="INFO">Clicking element '//*[@title="close-icon"]'.</msg>
+<msg time="2024-05-30T22:07:45.807441" level="INFO">xpath criteria: //*[@title="close-icon"]</msg>
+<arg>//*[@title="close-icon"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:07:45.274161" elapsed="0.533280"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:46.026766" level="INFO">xpath criteria: //*[@id="wzrk-cancel"]</msg>
+<arg>//*[@id="wzrk-cancel"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-30T22:07:45.807441" elapsed="0.219325"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:46.026766" level="INFO">Clicking element '//*[@id="wzrk-cancel"]'.</msg>
+<msg time="2024-05-30T22:07:46.684376" level="INFO">xpath criteria: //*[@id="wzrk-cancel"]</msg>
+<arg>//*[@id="wzrk-cancel"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:07:46.026766" elapsed="0.657610"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-30T22:07:51.685035" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-30T22:07:46.684376" elapsed="5.000659"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:37.160174" elapsed="14.524861"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:37.160174" elapsed="14.524861"/>
+</kw>
+<kw name="Verify Plans and Subscriptions Page" owner="PlansAndSubscriptions">
+<kw name="Clicking on Subscribe button" owner="PlansAndSubscriptions">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:51.685035" level="INFO">Clicking element '//*[@id="smartHookButton"]/div/span'.</msg>
+<msg time="2024-05-30T22:07:52.089174" level="INFO">xpath criteria: //*[@id="smartHookButton"]/div/span</msg>
+<arg>${SUBSCRIBE_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:07:51.685035" elapsed="0.404139"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-30T22:07:57.089584" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-30T22:07:52.089174" elapsed="5.000410"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:51.685035" elapsed="5.404549"/>
+</kw>
+<kw name="Validating heading of plans page" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:57.148107" level="INFO">Current page contains element '//*[@class="page_title"]'.</msg>
+<msg time="2024-05-30T22:07:57.148107" level="INFO">xpath criteria: //*[@class="page_title"]</msg>
+<arg>${SUBSCRIBE_PAGE_HEADER}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:07:57.089584" elapsed="0.058523"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:57.279872" level="INFO">Element '//*[@class="page_title"]' text is 'Subscribe to watch all content on Sony LIV' </msg>
+<msg time="2024-05-30T22:07:57.288938" level="INFO">xpath criteria: //*[@class="page_title"]</msg>
+<msg time="2024-05-30T22:07:57.288938" level="INFO">${actual_text} = Subscribe to watch all content on Sony LIV</msg>
+<var>${actual_text}</var>
+<arg>${SUBSCRIBE_PAGE_HEADER}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:07:57.148107" elapsed="0.140831"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${SUBSCRIBE_PAGE_HEADER_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:07:57.288938" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:57.089584" elapsed="0.199354"/>
+</kw>
+<kw name="Validating back arrow" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:57.367512" level="INFO">Current page contains element '//*[@class="back_Btn"]'.</msg>
+<msg time="2024-05-30T22:07:57.367512" level="INFO">xpath criteria: //*[@class="back_Btn"]</msg>
+<arg>${BACK_ARROW_BUTTON}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:07:57.288938" elapsed="0.078574"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:57.288938" elapsed="0.078574"/>
+</kw>
+<kw name="Validating sign in button" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:07:57.430185" level="INFO">Current page contains element '//*[@class="signin_text"]'.</msg>
+<msg time="2024-05-30T22:07:57.430185" level="INFO">xpath criteria: //*[@class="signin_text"]</msg>
+<arg>${SIGN_IN_BUTTON}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:07:57.367512" elapsed="0.062673"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-30T22:08:02.430891" level="INFO">Slept 5 seconds.</msg>
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-30T22:07:57.430185" elapsed="5.000706"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:57.367512" elapsed="5.063379"/>
+</kw>
+<kw name="For 599rs PACK" owner="PlansAndSubscriptions">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:02.430891" level="INFO">Clicking element '//*[@value="LIV_PRE_Mob_12M"]'.</msg>
+<msg time="2024-05-30T22:08:02.835172" level="INFO">xpath criteria: //*[@value="LIV_PRE_Mob_12M"]</msg>
+<arg>${599_PACK_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:02.430891" elapsed="0.404281"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:02.430891" elapsed="0.404281"/>
+</kw>
+<kw name="Validating number of logged in devices for 599rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:02.898150" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[2]/span[text()=1]'.</msg>
+<msg time="2024-05-30T22:08:02.898150" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=1]</msg>
+<arg>${599_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:02.835172" elapsed="0.062978"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.007625" level="INFO">Element '//*[@class='selected_plan subCell']/div[2]/span[text()=1]' text is '1' </msg>
+<msg time="2024-05-30T22:08:03.007625" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=1]</msg>
+<msg time="2024-05-30T22:08:03.007625" level="INFO">${actual_text} = 1</msg>
+<var>${actual_text}</var>
+<arg>${599_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:02.898150" elapsed="0.109475"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${599_PACK_LOGGED_IN_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.007625" elapsed="0.015517"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:02.835172" elapsed="0.187970"/>
+</kw>
+<kw name="Validating Watch on devices at same time for 599rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.085633" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[4]/span[text()=1]'.</msg>
+<msg time="2024-05-30T22:08:03.085633" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=1]</msg>
+<arg>${599_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.023142" elapsed="0.062491"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.195131" level="INFO">Element '//*[@class='selected_plan subCell']/div[4]/span[text()=1]' text is '1' </msg>
+<msg time="2024-05-30T22:08:03.195131" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=1]</msg>
+<msg time="2024-05-30T22:08:03.210672" level="INFO">${actual_text} = 1</msg>
+<var>${actual_text}</var>
+<arg>${599_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:03.085633" elapsed="0.125039"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${599_PACK_WATCH_ON_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.210672" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:03.023142" elapsed="0.187530"/>
+</kw>
+<kw name="Validating Max Video Quality for 599rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.257631" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[6]/span[text()='HD']'.</msg>
+<msg time="2024-05-30T22:08:03.257631" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='HD']</msg>
+<arg>${599_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.210672" elapsed="0.046959"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.383598" level="INFO">Element '//*[@class='selected_plan subCell']/div[6]/span[text()='HD']' text is 'HD
+(720p)' </msg>
+<msg time="2024-05-30T22:08:03.383598" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='HD']</msg>
+<msg time="2024-05-30T22:08:03.383598" level="INFO">${actual_text} = HD
+(720p)</msg>
+<var>${actual_text}</var>
+<arg>${599_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:03.257631" elapsed="0.125967"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${599_PACK_MAX_VIDEO_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.383598" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:03.210672" elapsed="0.172926"/>
+</kw>
+<kw name="Validating Max Audio Quality for 599rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.446001" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']'.</msg>
+<msg time="2024-05-30T22:08:03.446001" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<arg>${599_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.383598" elapsed="0.062403"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.571842" level="INFO">Element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']' text is '' </msg>
+<msg time="2024-05-30T22:08:03.571842" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<msg time="2024-05-30T22:08:03.571842" level="INFO">${actual_text} = </msg>
+<var>${actual_text}</var>
+<arg>${599_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:03.446001" elapsed="0.125841"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:03.383598" elapsed="0.188244"/>
+</kw>
+<kw name="Validating Ad free experience for 599rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.634338" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]'.</msg>
+<msg time="2024-05-30T22:08:03.634338" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<arg>${599_PACK_AD_FREE_EXP}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.571842" elapsed="0.062496"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.743826" level="INFO">Element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]' text is 'Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity' </msg>
+<msg time="2024-05-30T22:08:03.743826" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<msg time="2024-05-30T22:08:03.743826" level="INFO">${actual_text} = Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity</msg>
+<var>${actual_text}</var>
+<arg>${599_PACK_AD_FREE_EXP}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:03.634338" elapsed="0.109488"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${599_PACK_AD_FREE_EXP_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.743826" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:03.571842" elapsed="0.171984"/>
+</kw>
+<kw name="For 699rs pack" owner="PlansAndSubscriptions">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:03.743826" level="INFO">Clicking element '//*[@value="LIV_Pre_6M"]'.</msg>
+<msg time="2024-05-30T22:08:04.198428" level="INFO">xpath criteria: //*[@value="LIV_Pre_6M"]</msg>
+<arg>${699_PACK_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:03.743826" elapsed="0.454602"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:03.743826" elapsed="0.454602"/>
+</kw>
+<kw name="Validating number of logged in devices for 699rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.276577" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[2]/span[text()=5]'.</msg>
+<msg time="2024-05-30T22:08:04.276577" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=5]</msg>
+<arg>${699_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.198428" elapsed="0.078149"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.385902" level="INFO">Element '//*[@class='selected_plan subCell']/div[2]/span[text()=5]' text is '5' </msg>
+<msg time="2024-05-30T22:08:04.385902" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=5]</msg>
+<msg time="2024-05-30T22:08:04.385902" level="INFO">${actual_text} = 5</msg>
+<var>${actual_text}</var>
+<arg>${699_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:04.276577" elapsed="0.109325"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${699_PACK_LOGGED_IN_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.385902" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:04.198428" elapsed="0.187474"/>
+</kw>
+<kw name="Validating Watch on devices at same time for 699rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.448338" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[4]/span[text()=2]'.</msg>
+<msg time="2024-05-30T22:08:04.448338" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=2]</msg>
+<arg>${699_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.385902" elapsed="0.062436"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.605239" level="INFO">Element '//*[@class='selected_plan subCell']/div[4]/span[text()=2]' text is '2' </msg>
+<msg time="2024-05-30T22:08:04.605239" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=2]</msg>
+<msg time="2024-05-30T22:08:04.605239" level="INFO">${actual_text} = 2</msg>
+<var>${actual_text}</var>
+<arg>${699_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:04.448338" elapsed="0.156901"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${699_PACK_WATCH_ON_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.605239" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:04.385902" elapsed="0.219337"/>
+</kw>
+<kw name="Validating Max Video Quality for 699rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.714902" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']'.</msg>
+<msg time="2024-05-30T22:08:04.714902" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']</msg>
+<arg>${699_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.605239" elapsed="0.109663"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.824391" level="INFO">Element '//*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']' text is 'FULL HD
+(1080p)' </msg>
+<msg time="2024-05-30T22:08:04.824391" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']</msg>
+<msg time="2024-05-30T22:08:04.824391" level="INFO">${actual_text} = FULL HD
+(1080p)</msg>
+<var>${actual_text}</var>
+<arg>${699_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:04.714902" elapsed="0.109489"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${699_PACK_MAX_VIDEO_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.824391" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:04.605239" elapsed="0.219152"/>
+</kw>
+<kw name="Validating Max Audio Quality for 699rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:04.886760" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']'.</msg>
+<msg time="2024-05-30T22:08:04.886760" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<arg>${699_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:04.824391" elapsed="0.062369"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.011879" level="INFO">Element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']' text is '' </msg>
+<msg time="2024-05-30T22:08:05.011879" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<msg time="2024-05-30T22:08:05.011879" level="INFO">${actual_text} = </msg>
+<var>${actual_text}</var>
+<arg>${699_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:04.886760" elapsed="0.125119"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:04.824391" elapsed="0.187488"/>
+</kw>
+<kw name="Validating Ad free experience for 699rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.074816" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]'.</msg>
+<msg time="2024-05-30T22:08:05.074816" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<arg>${699_PACK_AD_FREE_EXP}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:05.011879" elapsed="0.062937"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.200904" level="INFO">Element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]' text is 'Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity' </msg>
+<msg time="2024-05-30T22:08:05.200904" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<msg time="2024-05-30T22:08:05.200904" level="INFO">${actual_text} = Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity</msg>
+<var>${actual_text}</var>
+<arg>${699_PACK_AD_FREE_EXP}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:05.074816" elapsed="0.126088"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${699_PACK_AD_FREE_EXP_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:05.200904" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:05.011879" elapsed="0.189025"/>
+</kw>
+<kw name="For 299rs pack" owner="PlansAndSubscriptions">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.200904" level="INFO">Clicking element '//*[@value="LIV_Pre_1M"]'.</msg>
+<msg time="2024-05-30T22:08:05.639577" level="INFO">xpath criteria: //*[@value="LIV_Pre_1M"]</msg>
+<arg>${299_PACK_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:05.200904" elapsed="0.438673"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:05.200904" elapsed="0.438673"/>
+</kw>
+<kw name="Validating number of logged in devices for 299rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.686448" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[2]/span[text()=5]'.</msg>
+<msg time="2024-05-30T22:08:05.686448" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=5]</msg>
+<arg>${299_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:05.639577" elapsed="0.046871"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.827791" level="INFO">Element '//*[@class='selected_plan subCell']/div[2]/span[text()=5]' text is '5' </msg>
+<msg time="2024-05-30T22:08:05.827791" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=5]</msg>
+<msg time="2024-05-30T22:08:05.827791" level="INFO">${actual_text} = 5</msg>
+<var>${actual_text}</var>
+<arg>${299_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:05.686448" elapsed="0.141343"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${299_PACK_LOGGED_IN_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:05.827791" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:05.639577" elapsed="0.188214"/>
+</kw>
+<kw name="Validating Watch on devices at same time for 299rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:05.874745" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[4]/span[text()=1]'.</msg>
+<msg time="2024-05-30T22:08:05.874745" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=1]</msg>
+<arg>${299_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:05.827791" elapsed="0.046954"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.124924" level="INFO">Element '//*[@class='selected_plan subCell']/div[4]/span[text()=1]' text is '1' </msg>
+<msg time="2024-05-30T22:08:06.124924" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=1]</msg>
+<msg time="2024-05-30T22:08:06.124924" level="INFO">${actual_text} = 1</msg>
+<var>${actual_text}</var>
+<arg>${299_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:05.874745" elapsed="0.250179"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${299_PACK_WATCH_ON_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.124924" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:05.827791" elapsed="0.297133"/>
+</kw>
+<kw name="Validating Max Video Quality for 299rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.187425" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']'.</msg>
+<msg time="2024-05-30T22:08:06.187425" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']</msg>
+<arg>${299_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.124924" elapsed="0.062501"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.312398" level="INFO">Element '//*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']' text is 'FULL HD
+(1080p)' </msg>
+<msg time="2024-05-30T22:08:06.312398" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']</msg>
+<msg time="2024-05-30T22:08:06.312398" level="INFO">${actual_text} = FULL HD
+(1080p)</msg>
+<var>${actual_text}</var>
+<arg>${299_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:06.187425" elapsed="0.124973"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${299_PACK_MAX_VIDEO_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.312398" elapsed="0.015615"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:06.124924" elapsed="0.203089"/>
+</kw>
+<kw name="Validating Max Audio Quality for 299rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.382027" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']'.</msg>
+<msg time="2024-05-30T22:08:06.382027" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<arg>${299_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.328013" elapsed="0.054014"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.500506" level="INFO">Element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']' text is '' </msg>
+<msg time="2024-05-30T22:08:06.500506" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<msg time="2024-05-30T22:08:06.500506" level="INFO">${actual_text} = </msg>
+<var>${actual_text}</var>
+<arg>${299_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:06.390590" elapsed="0.109916"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:06.328013" elapsed="0.172493"/>
+</kw>
+<kw name="Validating Ad free experience for 299rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.563749" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]'.</msg>
+<msg time="2024-05-30T22:08:06.563749" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<arg>${299_PACK_AD_FREE_EXP}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.500506" elapsed="0.063243"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.704409" level="INFO">Element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]' text is 'Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity' </msg>
+<msg time="2024-05-30T22:08:06.704409" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<msg time="2024-05-30T22:08:06.704409" level="INFO">${actual_text} = Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity</msg>
+<var>${actual_text}</var>
+<arg>${299_PACK_AD_FREE_EXP}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:06.563749" elapsed="0.140660"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${299_PACK_AD_FREE_EXP_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.704409" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:06.500506" elapsed="0.203903"/>
+</kw>
+<kw name="For 999rs pack" owner="PlansAndSubscriptions">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:06.704409" level="INFO">Clicking element '//*[@value="LIV_Pre_12M"]'.</msg>
+<msg time="2024-05-30T22:08:07.174744" level="INFO">xpath criteria: //*[@value="LIV_Pre_12M"]</msg>
+<arg>${999_PACK_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:06.704409" elapsed="0.470335"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:06.704409" elapsed="0.485884"/>
+</kw>
+<kw name="Validating number of logged in devices for 999rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.237149" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[2]/span[text()=5]'.</msg>
+<msg time="2024-05-30T22:08:07.237149" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=5]</msg>
+<arg>${999_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.190293" elapsed="0.046856"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.362160" level="INFO">Element '//*[@class='selected_plan subCell']/div[2]/span[text()=5]' text is '5' </msg>
+<msg time="2024-05-30T22:08:07.362160" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[2]/span[text()=5]</msg>
+<msg time="2024-05-30T22:08:07.362160" level="INFO">${actual_text} = 5</msg>
+<var>${actual_text}</var>
+<arg>${999_PACK_LOGGED_IN_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:07.237149" elapsed="0.125011"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${999_PACK_LOGGED_IN_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.362160" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:07.190293" elapsed="0.187518"/>
+</kw>
+<kw name="Validating Watch on devices at same time for 999rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.440757" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[4]/span[text()=2]'.</msg>
+<msg time="2024-05-30T22:08:07.440757" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=2]</msg>
+<arg>${999_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.377811" elapsed="0.062946"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.565742" level="INFO">Element '//*[@class='selected_plan subCell']/div[4]/span[text()=2]' text is '2' </msg>
+<msg time="2024-05-30T22:08:07.565742" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[4]/span[text()=2]</msg>
+<msg time="2024-05-30T22:08:07.565742" level="INFO">${actual_text} = 2</msg>
+<var>${actual_text}</var>
+<arg>${999_PACK_WATCH_ON_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:07.440757" elapsed="0.124985"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${999_PACK_WATCH_ON_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.565742" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:07.377811" elapsed="0.187931"/>
+</kw>
+<kw name="Validating Max Video Quality for 999rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.629093" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']'.</msg>
+<msg time="2024-05-30T22:08:07.629093" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']</msg>
+<arg>${999_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.565742" elapsed="0.063351"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.754166" level="INFO">Element '//*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']' text is 'FULL HD
+(1080p)' </msg>
+<msg time="2024-05-30T22:08:07.754166" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[6]/span[text()='FULL HD']</msg>
+<msg time="2024-05-30T22:08:07.754166" level="INFO">${actual_text} = FULL HD
+(1080p)</msg>
+<var>${actual_text}</var>
+<arg>${999_PACK_MAX_VIDEO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:07.629093" elapsed="0.125073"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${999_PACK_MAX_VIDEO_DEVICES_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.754166" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:07.565742" elapsed="0.188424"/>
+</kw>
+<kw name="Validating Max Audio Quality for 999rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.816708" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']'.</msg>
+<msg time="2024-05-30T22:08:07.816708" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<arg>${999_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.754166" elapsed="0.062542"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:07.941678" level="INFO">Element '//*[@class='selected_plan subCell']/div[8]/span[@class='img_block']' text is '' </msg>
+<msg time="2024-05-30T22:08:07.941678" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[8]/span[@class='img_block']</msg>
+<msg time="2024-05-30T22:08:07.941678" level="INFO">${actual_text} = </msg>
+<var>${actual_text}</var>
+<arg>${999_PACK_MAX_AUDIO_DEVICES}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:07.816708" elapsed="0.124970"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:07.754166" elapsed="0.187512"/>
+</kw>
+<kw name="Validating Ad free experience for 999rs pack" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:08.019837" level="INFO">Current page contains element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]'.</msg>
+<msg time="2024-05-30T22:08:08.019837" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<arg>${999_PACK_AD_FREE_EXP}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:07.957326" elapsed="0.062511"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:08.161029" level="INFO">Element '//*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]' text is 'Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity' </msg>
+<msg time="2024-05-30T22:08:08.161029" level="INFO">xpath criteria: //*[@class='selected_plan subCell']/div[10]/span[text()="Except on Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) and Interactivity"]</msg>
+<msg time="2024-05-30T22:08:08.161029" level="INFO">${actual_text} = Except On Sports, Liv Exclusives, Reality Shows (Live &amp; Recorded) And Interactivity</msg>
+<var>${actual_text}</var>
+<arg>${999_PACK_AD_FREE_EXP}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-05-30T22:08:08.019837" elapsed="0.141192"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${999_PACK_AD_FREE_EXP_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-30T22:08:08.161029" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:07.941678" elapsed="0.219351"/>
+</kw>
+<kw name="Validating Select a promo code" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:08.256106" level="INFO">Current page contains element '//*[@class="btn_promo"]'.</msg>
+<msg time="2024-05-30T22:08:08.256106" level="INFO">xpath criteria: //*[@class="btn_promo"]</msg>
+<arg>//*[@class="btn_promo"]</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:08.161029" elapsed="0.095077"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:08.256106" level="INFO">Clicking element '//*[@class="btn_promo"]'.</msg>
+<msg time="2024-05-30T22:08:08.851656" level="INFO">xpath criteria: //*[@class="btn_promo"]</msg>
+<arg>//*[@class="btn_promo"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:08.256106" elapsed="0.595550"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-30T22:08:10.851886" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-30T22:08:08.851656" elapsed="2.000230"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:10.851886" level="INFO">Clicking element '//*[@class="offerModelClose"]'.</msg>
+<msg time="2024-05-30T22:08:11.266919" level="INFO">xpath criteria: //*[@class="offerModelClose"]</msg>
+<arg>//*[@class="offerModelClose"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:10.851886" elapsed="0.415033"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:08.161029" elapsed="3.105890"/>
+</kw>
+<kw name="Validating pay button" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:11.330431" level="INFO">Current page contains element '//*[@class="pay_Btn"]'.</msg>
+<msg time="2024-05-30T22:08:11.330431" level="INFO">xpath criteria: //*[@class="pay_Btn"]</msg>
+<arg>//*[@class="pay_Btn"]</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:11.272974" elapsed="0.057457"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:11.266919" elapsed="0.063512"/>
+</kw>
+<kw name="Validating terms and conditions page" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:11.392913" level="INFO">Current page contains element '//*[text()="Terms and Conditions"]'.</msg>
+<msg time="2024-05-30T22:08:11.399434" level="INFO">xpath criteria: //*[text()="Terms and Conditions"]</msg>
+<arg>//*[text()="Terms and Conditions"]</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:11.330431" elapsed="0.069003"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:11.399434" level="INFO">Clicking element '//*[text()="Terms and Conditions"]'.</msg>
+<msg time="2024-05-30T22:08:12.066523" level="INFO">xpath criteria: //*[text()="Terms and Conditions"]</msg>
+<arg>//*[text()="Terms and Conditions"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:11.399434" elapsed="0.667089"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-30T22:08:14.082673" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-30T22:08:12.082132" elapsed="2.000541"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:14.082673" level="INFO">Clicking element '//*[@class="BackButton"]'.</msg>
+<msg time="2024-05-30T22:08:14.385707" level="INFO">xpath criteria: //*[@class="BackButton"]</msg>
+<arg>//*[@class="BackButton"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:14.082673" elapsed="0.303034"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:11.330431" elapsed="3.055276"/>
+</kw>
+<kw name="Validating privacy policy page" owner="PlansAndSubscriptions">
+<kw name="Page Should Contain Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:14.667244" level="INFO">Current page contains element '//*[text()="Privacy Policy"]'.</msg>
+<msg time="2024-05-30T22:08:14.667244" level="INFO">xpath criteria: //*[text()="Privacy Policy"]</msg>
+<arg>//*[text()="Privacy Policy"]</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="PASS" start="2024-05-30T22:08:14.385707" elapsed="0.281537"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:14.667244" level="INFO">Clicking element '//*[text()="Privacy Policy"]'.</msg>
+<msg time="2024-05-30T22:08:15.371329" level="INFO">xpath criteria: //*[text()="Privacy Policy"]</msg>
+<arg>//*[text()="Privacy Policy"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:14.667244" elapsed="0.704085"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-30T22:08:17.371719" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-30T22:08:15.371329" elapsed="2.000390"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-30T22:08:17.371719" level="INFO">Clicking element '//*[@class="BackButton"]'.</msg>
+<msg time="2024-05-30T22:08:17.723688" level="INFO">xpath criteria: //*[@class="BackButton"]</msg>
+<arg>//*[@class="BackButton"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-30T22:08:17.371719" elapsed="0.351969"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:14.385707" elapsed="3.337981"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:51.685035" elapsed="26.038653"/>
+</kw>
+<kw name="Close SonyLiv Application" owner="Common">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-05-30T22:08:17.723688" elapsed="0.672477"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:08:17.723688" elapsed="0.672477"/>
+</kw>
+<status status="PASS" start="2024-05-30T22:07:23.360122" elapsed="55.036043"/>
+</kw>
+<doc>Verify the guest plans and subscription page</doc>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-05-30T22:07:23.360122" elapsed="55.036043"/>
+</test>
+<status status="PASS" start="2024-05-30T22:07:22.931561" elapsed="55.464604"/>
+</suite>
+<status status="PASS" start="2024-05-30T22:07:22.929314" elapsed="55.466851"/>
+</suite>
+<status status="PASS" start="2024-05-30T22:07:22.926307" elapsed="55.485484"/>
+</suite>
+<status status="PASS" start="2024-05-30T22:07:22.893428" elapsed="55.518363"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="MWeb Project">MWeb Project</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">MWeb Project.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">MWeb Project.Tests.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="SonyLiv">MWeb Project.Tests.Tests.SonyLiv</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
