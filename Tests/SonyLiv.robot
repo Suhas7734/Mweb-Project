@@ -1,6 +1,6 @@
 *** Settings ***
-Library     AppiumLibrary
-Resource    ../Resources/Scenario Mapping/SonyLivTests.robot
+Library     AppiumLibrary   timeout=10s     run_on_failure=Capture Page Screenshot
+Resource    ../Resources/Scenario Mapping/SonyLivScenarioMapping.robot
 
 *** Variables ***
 
@@ -10,5 +10,10 @@ Resource    ../Resources/Scenario Mapping/SonyLivTests.robot
 
 Subscription Page for Guest user
     [Documentation]    Verify the guest plans and subscription page
-    [Tags]    Smoke
-    SonyLivTests.Plans and Subscription page validation
+    [Tags]    Sanity
+    SonyLivScenarioMapping.Plans and Subscription page validation
+
+Search Page for Guest user
+    [Documentation]    Verify the search content for guest user
+    [Tags]    Sanity
+    SonyLivScenarioMapping.Search Content Page Validation
