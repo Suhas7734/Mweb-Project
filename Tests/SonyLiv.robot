@@ -17,3 +17,8 @@ Search Page for Guest user
     [Documentation]    Verify the search content for guest user
     [Tags]    Sanity
     SonyLivScenarioMapping.Search Content Page Validation
+
+Search Page For Contextual Login
+    [Documentation]    Verify Contextual Login For Premium Content
+    [Tags]    Sanity
+    SonyLivScenarioMapping.Search Content Contextual Page Validation
