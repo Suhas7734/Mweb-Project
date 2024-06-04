@@ -28,7 +28,6 @@ ${CONTENT_DOWNLOAD_BTN}         //div[@class="secondary-cta-button-container" ]/
 
 
 
-
 #Text Validations =>
 
 ${CONTEXTUAL_CONTENT_ID}          1000168742

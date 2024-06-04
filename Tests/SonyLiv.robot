@@ -22,3 +22,8 @@ Search Page For Contextual Login
     [Documentation]    Verify Contextual Login For Premium Content
     [Tags]    Sanity
     SonyLivScenarioMapping.Search Content Contextual Page Validation
+
+Search Content With A Keyword
+    [Documentation]    Verify Search Results For A Keyword Search
+    [Tags]    Sanity
+    SonyLivScenarioMapping.Search Content With Keyword
